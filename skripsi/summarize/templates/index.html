@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ringkasan Paragraf</title>
+</head>
+<body>
+    <h1>Ringkasan Paragraf</h1>
+    {% for summary in summaries %}
+        <p>{{ summary }}</p>
+    {% endfor %}
+    <a href="{% url 'summarize' %}">Ringkas Paragraf Lain</a>
+</body>
+</html>
